@@ -142,8 +142,8 @@ const TableCenso = ({dataExcel, setSelectDataExcel, setDataExcel, dataSelectExce
         <Column field="nascimento" editor={(options) => textEditor(options)} header="Nascimento"></Column>
         <Column field="codigo" editor={(options) => textEditor(options)} header="Código Paciente"></Column>
         <Column field="guia" editor={(options) => textEditor(options)} header="Código Internação"></Column>
-        <Column field="entrada" header="Entrada"></Column>
-        <Column field="saida" header="Saida"></Column>
+        <Column field="entrada" editor={(options) => textEditor(options)} header="Entrada"></Column>
+        <Column field="saida" editor={(options) => textEditor(options)} header="Saida"></Column>
         <Column body={btnDeleteBody} headerStyle={{ width: "10%", minWidth: "8rem" }}
                 bodyStyle={{ textAlign: "center" }}></Column>
         <Column rowEditor={true} headerStyle={{ width: '1%', minWidth: '8rem' }} bodyStyle={{ textAlign: 'center' }} />
